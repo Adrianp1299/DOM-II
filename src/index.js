@@ -2,12 +2,12 @@ import './less/index.less'
 
 // Your code goes here!
 
-let nav = document.querySelector('nav');
+// let nav = document.querySelector('nav');
 
-let home = nav.firstElementChild;
-let about = home.nextElementSibling;
-let blog = about.nextElementSibling;
-let contact = blog.nextElementSibling;
+// let home = nav.firstElementChild;
+// let about = home.nextElementSibling;
+// let blog = about.nextElementSibling;
+// let contact = blog.nextElementSibling;
 // first click
 
 window.addEventListener('load', event => {
@@ -17,13 +17,13 @@ window.addEventListener('load', event => {
 
 // mouseover
 
-nav.addEventListener("mouseover", event => {
-   event.target.style.color = 'red';
+// nav.addEventListener("mouseover", event => {
+//    event.target.style.color = 'red';
   
-   setTimeout(() => {
-    event.target.style.color = '';
-   }, 500)
-})
+//    setTimeout(() => {
+//     event.target.style.color = '';
+//    }, 500)
+// })
 
 //keydown
 const text1 = document.querySelector('#text-content')
@@ -62,14 +62,14 @@ window.addEventListener('copy', event => {
     })
 
 //resize
-onresize = function(){
-this.document.body.textContent = ''
-}
+// onresize = function(){
+// this.document.body.textContent = ''
+// }
 
 //click
-contact.addEventListener('click', event => {
-    event.target.style.color = 'white'
-})
+// contact.addEventListener('click', event => {
+//     event.target.style.color = 'white'
+// })
 
 //mousemove
 document.body.addEventListener('mousemove', event => {
@@ -78,9 +78,9 @@ document.body.addEventListener('mousemove', event => {
 })
 
 // dblclick
-contact.addEventListener('dblclick', event => {
-    event.target.style.backgroundColor = 'black'
-})
+// contact.addEventListener('dblclick', event => {
+//     event.target.style.backgroundColor = 'black'
+// })
 
 // mouseenter
 const destinations = document.querySelectorAll('.destination')
@@ -90,7 +90,7 @@ for (let destination of destinations) {
     })
 }
 
-home.addEventListener('click', event => {
-    home.textContent = "You aren't going anywhere"
-    event.preventDefault()
-})
+// home.addEventListener('click', event => {
+//     home.textContent = "You aren't going anywhere"
+//     event.preventDefault()
+// })
